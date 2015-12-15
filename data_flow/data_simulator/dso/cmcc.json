@@ -1,0 +1,9 @@
+{
+  "tenantId": "dms2016",
+  "tenantName": "cmcc",
+  "eventName" : "CREATE_VM",
+  "vmUUID": "6e477b03-d9cd-4355-8e82-2e3928bf5eea",
+  "vmManagementIP" : "10.74.125.196",
+  "vmType": "vRouter",
+  "vmVNFList": [{"netIP":"10.74.125.195","vmType":"CPE"}]
+}
