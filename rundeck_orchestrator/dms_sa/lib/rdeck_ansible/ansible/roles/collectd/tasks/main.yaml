@@ -1,0 +1,8 @@
+- name: update collectd conf file
+  template: src=collectd.j2  dest=/tmp/rundeck/ansible/{{JOB_NAME}}__collectd.conf
+
+- name: copy fping_monitor.py script
+  copy: src=fping_monitor.py dest=/tmp/rundeck/ansible/{{JOB_NAME}}__fping_monitor.py
+
+- name: copy collectd killer script
+  template: src=killer.j2 dest=/tmp/rundeck/ansible/{{JOB_NAME}}__killer.sh

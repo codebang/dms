@@ -1,0 +1,1 @@
+mv /tmp/sa/collectd.conf /opt/collectd

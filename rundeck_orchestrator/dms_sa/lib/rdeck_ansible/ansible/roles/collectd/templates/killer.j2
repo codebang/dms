@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#ret= `killall -9 collectd`
+ret= `ps -elf | grep collec[td] | awk '{print $4}' | xargs kill -9`
+sudo cp /home/{{osType}}/fping_monitor.py /opt/collectd/lib/collectd/fping_monitor.py
+sudo cp /home/{{osType}}/collectd.conf /opt/collectd/etc/collectd.conf
+sudo /opt/collectd/sbin/collectd -C /opt/collectd/etc/collectd.conf
+echo "done"
+
+exit $?
